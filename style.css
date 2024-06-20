@@ -1,0 +1,336 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.header {
+  position: absolute;
+  top: -3.7rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 6rem;
+  letter-spacing: 5px;
+  color: #e0e0e0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-image {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.stats-text {
+  position: absolute;
+  left: -300px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-size: 0.8rem;
+  color: #1a2dab;
+  font-weight: 600;
+  max-width: 300px;
+}
+
+.bottom-right {
+  position: absolute;
+  right: 10%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.stats-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.bottom-right a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a2dab;
+  margin-top: 10px;
+  z-index: 2;
+  position: relative;
+}
+
+.archiv-logo {
+  position: absolute;
+  bottom: 0rem; 
+  right: 0rem; 
+  transform: translateY(150%);
+  font-size: 14px;
+  color: #666; 
+  z-index: 4;
+}
+
+.orange-circle {
+  width: 200px;
+  height: 200px;
+  background-color: #FA4C1A;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30px;
+  right: -130px;
+  filter: blur(56px);
+  z-index: 1;
+}
+
+.containertwo {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fafafa
+}
+
+.links a{
+  font-weight: bold;
+  color:#212121;
+  margin-top: 20%;
+  margin-left: 70%;
+  z-index: 2;
+}
+
+.links p{
+  margin-top: 5rem;
+}
+
+.image-container {
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.image-container img {
+  width: 100%;
+  height: 140%;
+  object-fit:contain;
+  transform: translateX(32%);
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align:left;
+  z-index: 7;
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #212121;
+}
+
+.game-stats {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a2dab;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 2;
+  position: relative;
+}
+
+.skills {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #1a2dab;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  z-index: 2;
+}
+
+.orange-circle-two {
+  width: 400px;
+  height: 400px;
+  background-color: #FA4C1A;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 13%;
+  right: 170px;
+  filter: blur(95px);
+  z-index: 1;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 7px;
+  background-color: #1a2dab;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.progress-value {
+  height: 100%;
+  background-color: #FA4C1A;
+}
+
+.containerthree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.left-section, .right-section {
+  width: 30%;
+  padding: 20px;
+}
+
+.left-section {
+  text-align: left;
+}
+
+.right-section {
+  text-align: right;
+}
+
+.image-section {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-section::before,
+.image-section::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.image-section::before {
+  width: 110px;
+  height: 110px;
+  background-color: #1a2dab;
+  border-radius: 50%;
+  left: 24%;
+  filter: blur(30px);
+  top: 14%;
+}
+
+.image-section::after {
+  width: 200px;
+  height: 200px;
+  background-color: #FA4C1A;
+  border-radius: 50%;
+  left: 44%;
+  filter: blur(50px);
+  top: 60%;
+}
+
+.image-section img {
+  width: 100%;
+  height: 80%;
+  max-width: 400px;
+}
+
+
+.username {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: -1.6rem;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 0.4rem;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #555;
+}
+
+.button-work a{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 220px; /* Adjust width as needed */
+  font-size: 1rem; /* Adjust font size as needed */
+  color: #cccccc;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+  background-color: #212121;
+  border: none;
+  cursor: pointer;
+
+}
+
+.button:hover {
+  background-color: #FA4C1A;
+  color: #1a2dab;
+}
+
+.skills-new ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+}
+
+.skills-new ul li {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 0.8rem;
+}
+
+.logo {
+  position: absolute;
+  bottom: 10px;
+  right: 4%;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.cross-symbol {
+  margin-top: 0.2rem;
+  margin-bottom: -3rem;
+}
